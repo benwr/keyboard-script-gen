@@ -12,7 +12,8 @@
         textfield.value = oldText.substring(0, selectionStart) +
           text + oldText.substring(selectionEnd);
 
-        textfield.setSelectionRange(selectionStart + text.length, selectionStart + text.length);
+        textfield.setSelectionRange(selectionStart + text.length,
+                                    selectionStart + text.length);
         textfield.focus();
       }
 
@@ -40,6 +41,7 @@
         link.download = "script.txt";
         link.href = dataURI();
       }
+      
     </script>
     <style type="text/css">
       body {
@@ -87,7 +89,6 @@
       
         text-align:center;
         background-color:#ccc;
-        cursor:pointer;
       }
 
       a {
